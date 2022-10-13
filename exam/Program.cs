@@ -62,3 +62,69 @@ Console.WriteLine("Введите число ");
 int a = Convert.ToInt32(Console.ReadLine());
 Cubes(a);
 */
+
+//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+/*
+double Multi(double a, double b)
+{
+    double s=Math.Pow(a,b);
+    return s;
+}
+
+Console.WriteLine("Введите первое число ");
+int n=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число ");
+int m=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Multi(n,m));
+*/
+
+//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*
+int SumDec(int a)
+{
+    int s=(a/10)+(a%10);
+    return s;
+}
+int SumSot(int a)
+{
+    int s=(a/100)+(a%100/10)+(a%10);
+    return s;
+}
+Console.WriteLine("Введите число ");
+int n=Convert.ToInt32(Console.ReadLine());
+
+if(n<100)
+    Console.WriteLine(SumDec(n));
+else
+{
+    Console.WriteLine(SumSot(n));
+}
+*/
+
+
+// Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+/*
+int[] FindArray(int size)
+{
+    int[] newArray= new int[size];
+    
+    for(int i =0; i<size;i++)
+        newArray[i]=new Random().Next();
+    return newArray;
+}
+
+void ShowArray(int [] array )
+{
+    for(int i = 0; i< array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine("Введите кол-во элементов ");
+int size= Convert.ToInt32(Console.ReadLine());
+int [] myArray=FindArray(size);
+ShowArray(myArray);
+*/
