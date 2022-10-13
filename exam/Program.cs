@@ -81,24 +81,22 @@ Console.WriteLine(Multi(n,m));
 
 //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-int SumDec(int a)  //1425  1420
+int Summm(int a)  //1425  1420
 {
    int sum=0;
-   for(int n = a; n>10; sum+=n1)
-   {
-        int n1=a%10;
-        n=a/10;
-        
-
-   }
+   int n=a;
+   int n1=0;
+   while(n>10)
+    n1=a%10;
+    n=a/10;
+    sum+=n1;
    return sum;
 }
 
 
 Console.WriteLine("Введите число ");
-int n=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(SumDec(n));
-
+int s=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Summm(s));
 
 
 // Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
